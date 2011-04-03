@@ -1,9 +1,5 @@
 // Global variables
-var username = "rod_wilhelmy";
-var jsonURI = "http://joinme.heroku.com/" + username + "/activities.json";
-//var serverURI = userToken + "@" + jsonURI;
-var serverURI = jsonURI;
-
+var serverURI;
 var currentActivityFeed = [];
 var screen;
 var screenState = {
@@ -11,13 +7,13 @@ var screenState = {
 	MAP : 1
 };
 
-$(document).ready(function() {
 
+// Function for iOS to initialize the screen
+function initialize(username) {
+	serverURI = "http://joinme.heroku.com/" + username + "/activities.json";
+	
 	// Initial screen state
 	screen = screenState.LIST;
-	
-	// TEMPORARY - delete when tabs are working in iOS
-	lastKnownLocation = {"lat":100,"lon":200};
 	
 	// Setting button actions
 	$('#addButton').click(toggleNewActivityBox);
@@ -25,16 +21,6 @@ $(document).ready(function() {
 	
 	// Fetch activity feed
 	fetchActivityFeed();
-	
-
-});
-
-
-
-
-// Callback function to for iOS to set username 
-function logInAs(user) {
-	username = user;
 }
 
 
@@ -100,9 +86,6 @@ function changeTab(tabName) {
 	loadActivityFeed();
 }
 
-
-
-/* -------------- HTTP REQUESTS -------------- */
 
 
 // Function that gets current activity feeds from the server
