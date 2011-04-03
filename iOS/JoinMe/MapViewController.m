@@ -36,10 +36,6 @@
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
-    // Listen for activities download
-    NSNotificationCenter *notifications = [NSNotificationCenter defaultCenter];
-    [notifications addObserver:self selector:@selector(pinActivities:) name:@"ActivitiesDownloaded" object:nil];
-    
     // [[UIScreen mainScreen] applicationFrame]
     mapView = [[MKMapView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     mapView.mapType = MKMapTypeStandard;
@@ -69,7 +65,8 @@
 - (void)viewWillAppear:(BOOL)animated 
 {
     // Get activities to map
-    [mapView addAnnotations:[self.delegate activitiesToMap:self]];
+    NSArray *array = [self.delegate activitiesToMap:self];
+    [mapView addAnnotations:array];
 }
 
 

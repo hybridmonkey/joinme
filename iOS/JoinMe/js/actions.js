@@ -30,10 +30,16 @@ function receiveLocation(latitude, longitude) {
 }
 
 
+function tweetCallback(status)
+{
+    // TODO - handle status (boolean)
+    toggleNewActivityBox();
+}
+
 
 // Function that toggles between showing and hiding the newActivityBox div
 function toggleNewActivityBox() {
-	if('#newActivityBox') {
+	if(!$("#newActivityBox").is(":visible")) {
 		askForCurrentLocation();	
 	}
 
@@ -49,7 +55,7 @@ function willShowFeed() {
     for (var i = 0; i < currentActivityFeed.length; i++) {
         feedItems[i] = 
             "<li class='activityRow'><div class='avatar'><img src='" + currentActivityFeed[i].activity.avatar + "' /></div>" +
-            "<div class='feedInfo'><span class='info-name'>" + currentActivityFeed[i].activity.user + "</span>" +
+            "<div class='feedInfo'><span class='info-name'>" + currentActivityFeed[i].activity.twitter_user + "</span>" +
             "<span class='info-what'>" + currentActivityFeed[i].activity.what + "</span>" +
             "<span class='info-when'>" + currentActivityFeed[i].activity.when + "</span>" + "</div></li>";            
     }

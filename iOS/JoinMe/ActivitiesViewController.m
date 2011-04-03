@@ -118,6 +118,9 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
 	NSLog(@"webViewDidFinishLoad");
+    if ([_engine isAuthorized]) {
+        [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"initialize('%@')", [_engine username]]];
+    }
 }
 
 
@@ -189,14 +192,14 @@
                 
                 return NO;
             } else if ([method isEqualToString:@"iOS.tweet"]) {
-                // {"method":"iOS.tweet", "callback":"toggleNewActivityBox", "msg":"A message", "lat":"3.90", "lon":"5.68"}
+                // {"method":"iOS.tweet", "callback":"tweetCallback", "msg":"A message", "lat":"3.90", "lon":"5.68"}
                 NSString *msg = (NSString *)[json valueForKey:@"msg"];
                 // double lat = [[json valueForKey:@"lat"] doubleValue];
                 // double lon = [[json valueForKey:@"lon"] doubleValue];
                 // Tweet!
                 // TODO - add geolocation
                 // TODO: this API is deprecated, change to account/update_profile
-                // [_engine setLocation:(NSString *)location]
+                
                 [_engine sendUpdate:msg];
             }
 
@@ -232,26 +235,23 @@
     [self.activities removeAllObjects];
     
     Activity *a;
-    NSDictionary *where;
     
     for (NSDictionary *obj in activitiesJSON) {
         obj = (NSDictionary *)[obj valueForKey:@"activity"];
         
         a = [[Activity alloc] init];
-        where = nil;
         
-        a.user = [obj valueForKey:@"user"];
+        a.user = [obj valueForKey:@"twitter_user"];
         a.avatar_url = [obj valueForKey:@"avatar"];
         a.what = [obj valueForKey:@"what"];
         a.when = [obj valueForKey:@"when"];
-        where = (NSDictionary *)[obj valueForKey:@"where"];
+        NSDictionary *where = (NSDictionary *)[obj valueForKey:@"where"];
         
         // Only add activities having coordinates
         if (![where isKindOfClass:[NSNull class]]) {
             a.latitude = [[where valueForKey:@"lat"] doubleValue];
             a.longitude = [[where valueForKey:@"lon"] doubleValue];
             [self.activities addObject:a];
-            [where release];
         }
         
         [a release];
@@ -268,6 +268,7 @@
 {
     double lat = newLocation.coordinate.latitude;
     double lon = newLocation.coordinate.longitude;
+    NSLog(@"receiveLocation(%g, %g)", lat, lon);
     [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"receiveLocation(%g, %g)", lat, lon]];
     [gps stopUpdatingLocation];
 }
@@ -316,14 +317,15 @@
 #pragma mark TwitterEngineDelegate
 
 
-- (void)requestSucceeded:(NSString *)requestIdentifier { 
-    // TODO - avisar a JS del exito del tweet
+- (void)requestSucceeded:(NSString *)requestIdentifier {
+    [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"tweetCallback(1)"]];
     NSLog(@"Request %@ succeeded", requestIdentifier); 
 }  
 
 
 - (void)requestFailed:(NSString *)requestIdentifier withError:(NSError *)error {
-    [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"errorHandler(%@)", [error localizedDescription]]];
+    [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"tweetCallback(0)"]];
+    NSLog(@"Request %@ failed", requestIdentifier);
 }
 
 
