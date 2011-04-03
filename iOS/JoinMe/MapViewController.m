@@ -60,10 +60,16 @@
     MKCoordinateSpan span = MKCoordinateSpanMake(0.01, 0.01);
     mapView.region = MKCoordinateRegionMake(location, span);
     
+    // TODO - centrar mapa según coordenadas del user
+    
+    self.view = mapView;
+}
+
+
+- (void)viewWillAppear:(BOOL)animated 
+{
     // Get activities to map
     [mapView addAnnotations:[self.delegate activitiesToMap:self]];
-   
-    self.view = mapView;
 }
 
 
@@ -101,7 +107,9 @@
 {
     NSLog(@"mapView didSelectAnnotationView");
 
-    NSURL *url = [NSURL URLWithString:@"http://a2.twimg.com/profile_images/1156940953/Avatar_normal.jpg"];
+    Activity *selectedActivity = (Activity *)view.annotation;
+                                  
+    NSURL *url = [NSURL URLWithString:selectedActivity.avatar_url];
     
     if ([view.leftCalloutAccessoryView isKindOfClass:[UIImageView class]]) {
         UIImageView *imageView = (UIImageView *)view.leftCalloutAccessoryView;

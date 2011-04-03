@@ -28,6 +28,9 @@
 
 - (NSString *)subtitle
 {
+    if (!self.user) {
+        return [NSString stringWithFormat:@"join El Bato at %@", self.when];
+    }
     return [NSString stringWithFormat:@"join %@ at %@", self.user, self.when];
 }
 

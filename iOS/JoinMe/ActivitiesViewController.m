@@ -11,11 +11,6 @@
 #import "SBJsonParser.h"
 #import <CoreLocation/CoreLocation.h>
 
-/*
-@interface ActivitiesViewController()
-    @property (nonatomic, retain) UIWebView *webView;
-@end
-*/
 
 @implementation ActivitiesViewController
 
@@ -63,10 +58,19 @@
 
 - (void)loadView
 {
+    NSString *path = [[NSBundle mainBundle] bundlePath];
+    NSURL *baseURL = [NSURL fileURLWithPath:path];
+    
     NSData *fileData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]];
-	[self.webView loadData:fileData MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:nil];
+	[self.webView loadData:fileData MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:baseURL];
 	    
 	self.view = self.webView;
+}
+
+
+- (void)viewDidLoad
+{
+    [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"initialize('rod_wilhelmy')"]];
 }
 
 
@@ -130,6 +134,8 @@
                 NSString *uri = (NSString *)[json valueForKey:@"uri"];
                 NSString *server_response = [NSString stringWithContentsOfURL:[NSURL URLWithString:uri] encoding:NSUTF8StringEncoding error:nil];
                 [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@(%@)", callback, server_response]];
+                
+                return NO;
 			} else if ([method isEqualToString:@"iOS.findMe"]) {
                 // { "method":"iOS.findMe", "callback":"receiveLocation" }
                 
@@ -155,6 +161,7 @@
                 gps.distanceFilter = 500;
                 [gps startUpdatingLocation];
                 
+                return NO;
             }
 
             
@@ -178,26 +185,45 @@
 {
     NSLog(@"activitiesToMap");
     
-    Activity *a = [[Activity alloc] init];
-    a.user = @"Rudi";
-    a.avatar_url = @"http://a2.twimg.com/profile_images/1156940953/Avatar_normal.jpg";
-    a.what = @"hacking";
-    a.when = @"11PM";
-    a.latitude = 25.652978;
-    a.longitude = -100.2917;
+    NSString *activitiesString = [self.webView stringByEvaluatingJavaScriptFromString:@"willShowMap()"];
+    NSLog(@"%@", activitiesString);
     
-    Activity *b = [[Activity alloc] init];
-    b.user = @"John Doe";
-    b.avatar_url = @"http://a2.twimg.com/profile_images/1156940953/Avatar_normal.jpg";
-    b.what = @"eating pizza";
-    b.when = @"09PM";
-    b.latitude = 25.652978;
-    b.longitude = -100.2910;
+    // JSON parsing
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    id activitiesJSON = [parser objectWithString:activitiesString];
+    if (!activitiesJSON) return nil;
+    if (![activitiesJSON isKindOfClass:[NSArray class]]) return nil;
+    [parser release];
+    if (![[activitiesJSON lastObject] isKindOfClass:[NSDictionary class]]) return nil;
+    
+    [self.activities removeAllObjects];
+    
+    Activity *a;
+    NSDictionary *where;
+    
+    for (NSDictionary *obj in activitiesJSON) {
+        obj = (NSDictionary *)[obj valueForKey:@"activity"];
         
-    [self.activities addObject:a];
+        a = [[Activity alloc] init];
+        where = nil;
+        
+        a.user = [obj valueForKey:@"user"];
+        a.avatar_url = [obj valueForKey:@"avatar"];
+        a.what = [obj valueForKey:@"what"];
+        a.when = [obj valueForKey:@"when"];
+        where = (NSDictionary *)[obj valueForKey:@"where"];
+        
+        // Only add activities having coordinates
+        if (![where isKindOfClass:[NSNull class]]) {
+            a.latitude = [[where valueForKey:@"lat"] doubleValue];
+            a.longitude = [[where valueForKey:@"lon"] doubleValue];
+            [self.activities addObject:a];
+            
+        }
+    }
+    
     [a release];
-    [self.activities addObject:b];
-    [b release];
+    [where release];
     
     return self.activities;
 }

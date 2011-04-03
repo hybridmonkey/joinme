@@ -16,7 +16,6 @@
 		DCC9748A1347DC8100A39430 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC974881347DC8100A39430 /* MainWindow.xib */; };
 		DCC974A41347DD7800A39430 /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974A31347DD7800A39430 /* ActivitiesViewController.m */; };
 		DCC974A81347DD8F00A39430 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974A71347DD8F00A39430 /* MapViewController.m */; };
-		DCC974B21347E27900A39430 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DCC974B11347E27900A39430 /* index.html */; };
 		DCC974CE1347EAA500A39430 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC974CD1347EAA500A39430 /* MapKit.framework */; };
 		DCC974D71348023800A39430 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974D61348023800A39430 /* Activity.m */; };
 		DCC974FC13482A5D00A39430 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974F113482A5D00A39430 /* NSObject+SBJSON.m */; };
@@ -26,6 +25,16 @@
 		DCC9750013482A5D00A39430 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974F913482A5D00A39430 /* SBJsonParser.m */; };
 		DCC9750113482A5D00A39430 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974FB13482A5D00A39430 /* SBJsonWriter.m */; };
 		DCC9751313485C5300A39430 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC9751213485C5200A39430 /* CoreLocation.framework */; };
+		DCC975231348687B00A39430 /* ColabReg-webfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = DCC975171348687B00A39430 /* ColabReg-webfont.eot */; };
+		DCC975241348687B00A39430 /* ColabReg-webfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = DCC975181348687B00A39430 /* ColabReg-webfont.svg */; };
+		DCC975251348687B00A39430 /* ColabReg-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCC975191348687B00A39430 /* ColabReg-webfont.ttf */; };
+		DCC975261348687B00A39430 /* ColabReg-webfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = DCC9751A1348687B00A39430 /* ColabReg-webfont.woff */; };
+		DCC9752C1348687B00A39430 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DCC975221348687B00A39430 /* index.html */; };
+		DCC9752D13486D7600A39430 /* reset.css in Resources */ = {isa = PBXBuildFile; fileRef = DCC9751B1348687B00A39430 /* reset.css */; };
+		DCC9752E13486D7600A39430 /* actions.js in Resources */ = {isa = PBXBuildFile; fileRef = DCC975201348687B00A39430 /* actions.js */; };
+		DCC9752F13486D7600A39430 /* screen.css in Resources */ = {isa = PBXBuildFile; fileRef = DCC9751C1348687B00A39430 /* screen.css */; };
+		DCC9753013486D7600A39430 /* jquery-1.5.js in Resources */ = {isa = PBXBuildFile; fileRef = DCC975211348687B00A39430 /* jquery-1.5.js */; };
+		DCC9753113486D7600A39430 /* addIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC9751E1348687B00A39430 /* addIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +53,6 @@
 		DCC974A31347DD7800A39430 /* ActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesViewController.m; sourceTree = "<group>"; };
 		DCC974A61347DD8F00A39430 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		DCC974A71347DD8F00A39430 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		DCC974B11347E27900A39430 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		DCC974CD1347EAA500A39430 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DCC974D51348023800A39430 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
 		DCC974D61348023800A39430 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
@@ -62,6 +70,16 @@
 		DCC974FA13482A5D00A39430 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		DCC974FB13482A5D00A39430 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		DCC9751213485C5200A39430 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DCC975171348687B00A39430 /* ColabReg-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ColabReg-webfont.eot"; sourceTree = "<group>"; };
+		DCC975181348687B00A39430 /* ColabReg-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ColabReg-webfont.svg"; sourceTree = "<group>"; };
+		DCC975191348687B00A39430 /* ColabReg-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ColabReg-webfont.ttf"; sourceTree = "<group>"; };
+		DCC9751A1348687B00A39430 /* ColabReg-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ColabReg-webfont.woff"; sourceTree = "<group>"; };
+		DCC9751B1348687B00A39430 /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = reset.css; path = css/reset.css; sourceTree = "<group>"; };
+		DCC9751C1348687B00A39430 /* screen.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = screen.css; path = css/screen.css; sourceTree = "<group>"; };
+		DCC9751E1348687B00A39430 /* addIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addIcon.png; path = images/addIcon.png; sourceTree = "<group>"; };
+		DCC975201348687B00A39430 /* actions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = actions.js; path = js/actions.js; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		DCC975211348687B00A39430 /* jquery-1.5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-1.5.js"; path = "js/jquery-1.5.js"; sourceTree = "<group>"; };
+		DCC975221348687B00A39430 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +147,8 @@
 		DCC9747D1347DC8100A39430 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCC975141348685900A39430 /* Web */,
 				DCC974EE13482A5D00A39430 /* JSON */,
-				DCC974B11347E27900A39430 /* index.html */,
 				DCC9747E1347DC8100A39430 /* JoinMe-Info.plist */,
 				DCC9747F1347DC8100A39430 /* InfoPlist.strings */,
 				DCC974821347DC8100A39430 /* JoinMe-Prefix.pch */,
@@ -157,6 +175,39 @@
 				DCC974FB13482A5D00A39430 /* SBJsonWriter.m */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		DCC975141348685900A39430 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				DCC975151348687B00A39430 /* css */,
+				DCC975221348687B00A39430 /* index.html */,
+				DCC9751B1348687B00A39430 /* reset.css */,
+				DCC975201348687B00A39430 /* actions.js */,
+				DCC9751C1348687B00A39430 /* screen.css */,
+				DCC975211348687B00A39430 /* jquery-1.5.js */,
+				DCC9751E1348687B00A39430 /* addIcon.png */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		DCC975151348687B00A39430 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				DCC975161348687B00A39430 /* fonts */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		DCC975161348687B00A39430 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DCC975171348687B00A39430 /* ColabReg-webfont.eot */,
+				DCC975181348687B00A39430 /* ColabReg-webfont.svg */,
+				DCC975191348687B00A39430 /* ColabReg-webfont.ttf */,
+				DCC9751A1348687B00A39430 /* ColabReg-webfont.woff */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +257,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC9752D13486D7600A39430 /* reset.css in Resources */,
+				DCC9752E13486D7600A39430 /* actions.js in Resources */,
+				DCC9752F13486D7600A39430 /* screen.css in Resources */,
+				DCC9753013486D7600A39430 /* jquery-1.5.js in Resources */,
+				DCC9753113486D7600A39430 /* addIcon.png in Resources */,
 				DCC974811347DC8100A39430 /* InfoPlist.strings in Resources */,
 				DCC9748A1347DC8100A39430 /* MainWindow.xib in Resources */,
-				DCC974B21347E27900A39430 /* index.html in Resources */,
+				DCC975231348687B00A39430 /* ColabReg-webfont.eot in Resources */,
+				DCC975241348687B00A39430 /* ColabReg-webfont.svg in Resources */,
+				DCC975251348687B00A39430 /* ColabReg-webfont.ttf in Resources */,
+				DCC975261348687B00A39430 /* ColabReg-webfont.woff in Resources */,
+				DCC9752C1348687B00A39430 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
