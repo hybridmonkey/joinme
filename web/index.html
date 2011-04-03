@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+<!-- META -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- TITLE -->
+<title>follow me</title>
+
+<!-- CSS -->
+<link href="css/reset.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="css/screen.css" type="text/css" rel="stylesheet" media="screen" />
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery-1.5.js"></script>
+<script type="text/javascript" src="js/actions.js"></script>
+
+</head>
+
+<body>
+
+	<div id="page">
+		<div id="header">
+    			<span id="appName">join me</span>
+    			<img id="addButton" src="images/addIcon.png" />
+    	</div>
+    
+		<!-- newActivity hidden DIV -->
+		<div id="newActivityBox">
+			<form id="newActivityForm">
+				<input type="text" id="activityTitle" placeholder="What are we doing?" autofocus></input>
+				<input type="text" id="activityTime" placeholder="When?"></input>
+				<input type="text" id="activityLocation" placeholder="Where?"></input>
+				<span class="button" id="activitySubmitButton">Go</span>
+			</form>
+		</div>
+    
+		<ul id="activityFeed"></ul>
+	
+	</div>
+	
+</body>
+
+</html>
