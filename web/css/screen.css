@@ -1,0 +1,157 @@
+body {
+	font-family: 'ColaborateRegular', Arial, sans-serif;
+	font-size: 1em;
+	background: #222222;
+	color: #555451;
+}
+
+div#page {
+	width: 320px;
+	min-height: 480px; /* -- Remove for testing on device */
+	background: white;
+}
+
+
+
+/* --- HEADER Elements---*/
+
+div#header {
+	
+}
+
+
+#header #appName {
+	font-size: 3em;
+	text-align: center;
+	display: block;
+	color: #333333;
+}
+
+#header #addButton {
+	position: relative;
+	right: 15px;
+	top: -40px;
+	float: right;
+	z-index: 100;
+	width: 16px;
+	height: 16px;
+}
+
+
+
+
+/* --- newActivityBox Elements---*/
+
+#newActivityBox {
+	display: none;
+	border-top: 2px dashed;
+	border-bottom: 2px dashed;
+	margin: 10px 0;
+}
+
+#newActivityForm input {
+	font-size: 1.5em;
+	width: 276px;
+	margin: 10px 10px 10px 10px;
+	padding: 0 10px 0 10px;
+}
+
+#newActivityForm #activityTitle {
+	
+}
+
+#newActivityForm #activityTime {
+
+}
+
+#newActivityForm #activityLocation {
+
+}
+
+#newActivityForm #activitySubmitButton {
+	color: #fff;
+	padding: 10px;
+	margin: 10px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #112234;
+	border-top-left-radius: 2px 2px;
+	border-top-right-radius: 2px 2px;
+	border-bottom-left-radius: 2px 2px;
+	border-bottom-right-radius: 2px 2px;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+}
+
+
+/* --- activityFeed Elements---*/
+
+ul#activityFeed {
+	overflow: hidden;
+	list-style-type: none;
+	width: inherit;
+}
+
+ul#activityFeed li.activityRow {
+	border-bottom: 1px solid #D1CAC2;
+	padding: 10px;
+}
+
+ul#activityFeed li .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	z-index: 100;
+}
+
+ul#activityFeed li .avatar img {
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+}
+
+ul#activityFeed li .feedInfo .info-name {
+	font-size: 1.5em;
+	display: block;
+	
+}
+
+ul#activityFeed li .feedInfo .info-what {
+	font-size: 1em;
+}
+
+ul#activityFeed li .feedInfo .info-when {
+	font-size: 1em;
+	font-style: italic;
+	color: gray;
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FONT DEFINITIONS */
+@font-face {
+    font-family: 'ColaborateRegular';
+    src: url('fonts/ColabReg-webfont.eot');
+    src: url('fonts/ColabReg-webfont.eot?iefix') format('eot'),
+         url('fonts/ColabReg-webfont.woff') format('woff'),
+         url('fonts/ColabReg-webfont.ttf') format('truetype'),
+         url('fonts/ColabReg-webfont.svg#webfontB6AeCMH3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
