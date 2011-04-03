@@ -5,20 +5,22 @@ var currentActivityFeed = [];
 
 // Function for iOS to initialize the screen
 $(document).ready(function() {
-	serverURI = "http://joinme.heroku.com/" + 'rod_wilhelmy' + "/activities.json";
-		
 	// Setting button actions
 	$('#addButton').click(toggleNewActivityBox);
 	$('#activitySubmitButton').click(pushActivity);
-	
-	// Fetch activity feed
-	fetchActivityFeed();
 });
 
 
+function initialize(username) {
+    serverURI = "http://joinme.heroku.com/" + username + "/activities.json";
+    // Fetch activity feed
+	fetchActivityFeed();
+}
+
+
 // Function that asks iOS for the device's current location
-function askForCurrentLocation(){
-	// TODO
+function askForCurrentLocation() {
+    window.location = '{ "method":"iOS.findMe", "callback":"receiveLocation" }';
 }
 
 
@@ -87,15 +89,10 @@ function errorHandler(errorMessage) {
 
 // Function that sends a new activity to the server
 function pushActivity() {
-	var newActivity = {};
+	var newActivity = "#joinMe " + $('#newActivityForm #activityTitle').val();
+    newActivity += " #at " + $('#newActivityForm #activityTime').val();
+    var coordinates = $('#newActivityForm #activityLocation').val().split(',');
+	// newActivity.where = {"lat":coordinates[0],"lon":coordinates[1]};
 	
-	newActivity.what = $('#newActivityForm #activityTitle').val();
-	newActivity.when = $('#newActivityForm #activityTime').val();
-	newActivity.where = {"lat":lastKnownLocation.lat,"lon":lastKnownLocation.lon};
-	
-	//TODO make iOS make the request
-	$.getJSON(serverURI, newActivity, function(data) {
-  		// Close newActivityBox
-		$('#newActivityBox').slideToggle('fast');
-	});
+    window.location = '{"method":"iOS.tweet", "callback":"toggleNewActivityBox", "msg":"' + newActivity + '", "lat":"' + coordinates[0] + '", "lon":"' + coordinates[1] + '"}';
 }

@@ -25,9 +25,11 @@
     
     // Setup tab icons
     UITabBarItem *item;
-    item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:0];
+    // item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:0];
+    item = [[UITabBarItem alloc] initWithTitle:@"Friends" image:nil tag:0];    
     activities.tabBarItem = item;
-    item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:0];
+    // item = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:0];
+    item = [[UITabBarItem alloc] initWithTitle:@"Map" image:nil tag:0];    
     map.tabBarItem = item;
     [item release];
     
