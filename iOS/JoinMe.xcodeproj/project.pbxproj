@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCC974771347DC8100A39430 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC974761347DC8100A39430 /* UIKit.framework */; };
+		DCC974791347DC8100A39430 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC974781347DC8100A39430 /* Foundation.framework */; };
+		DCC9747B1347DC8100A39430 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC9747A1347DC8100A39430 /* CoreGraphics.framework */; };
+		DCC974811347DC8100A39430 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCC9747F1347DC8100A39430 /* InfoPlist.strings */; };
+		DCC974841347DC8100A39430 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974831347DC8100A39430 /* main.m */; };
+		DCC974871347DC8100A39430 /* JoinMeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974861347DC8100A39430 /* JoinMeAppDelegate.m */; };
+		DCC9748A1347DC8100A39430 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC974881347DC8100A39430 /* MainWindow.xib */; };
+		DCC974A41347DD7800A39430 /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974A31347DD7800A39430 /* ActivitiesViewController.m */; };
+		DCC974A81347DD8F00A39430 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974A71347DD8F00A39430 /* MapViewController.m */; };
+		DCC974B21347E27900A39430 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = DCC974B11347E27900A39430 /* index.html */; };
+		DCC974CE1347EAA500A39430 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC974CD1347EAA500A39430 /* MapKit.framework */; };
+		DCC974D71348023800A39430 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974D61348023800A39430 /* Activity.m */; };
+		DCC974FC13482A5D00A39430 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974F113482A5D00A39430 /* NSObject+SBJSON.m */; };
+		DCC974FD13482A5D00A39430 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974F313482A5D00A39430 /* NSString+SBJSON.m */; };
+		DCC974FE13482A5D00A39430 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974F513482A5D00A39430 /* SBJSON.m */; };
+		DCC974FF13482A5D00A39430 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974F713482A5D00A39430 /* SBJsonBase.m */; };
+		DCC9750013482A5D00A39430 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974F913482A5D00A39430 /* SBJsonParser.m */; };
+		DCC9750113482A5D00A39430 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC974FB13482A5D00A39430 /* SBJsonWriter.m */; };
+		DCC9751313485C5300A39430 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC9751213485C5200A39430 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCC974721347DC8100A39430 /* JoinMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoinMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC974761347DC8100A39430 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCC974781347DC8100A39430 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCC9747A1347DC8100A39430 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCC9747E1347DC8100A39430 /* JoinMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoinMe-Info.plist"; sourceTree = "<group>"; };
+		DCC974801347DC8100A39430 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCC974821347DC8100A39430 /* JoinMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JoinMe-Prefix.pch"; sourceTree = "<group>"; };
+		DCC974831347DC8100A39430 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCC974851347DC8100A39430 /* JoinMeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JoinMeAppDelegate.h; sourceTree = "<group>"; };
+		DCC974861347DC8100A39430 /* JoinMeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoinMeAppDelegate.m; sourceTree = "<group>"; };
+		DCC974891347DC8100A39430 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DCC974A21347DD7800A39430 /* ActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesViewController.h; sourceTree = "<group>"; };
+		DCC974A31347DD7800A39430 /* ActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesViewController.m; sourceTree = "<group>"; };
+		DCC974A61347DD8F00A39430 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DCC974A71347DD8F00A39430 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DCC974B11347E27900A39430 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		DCC974CD1347EAA500A39430 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DCC974D51348023800A39430 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		DCC974D61348023800A39430 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		DCC974EF13482A5D00A39430 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		DCC974F013482A5D00A39430 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		DCC974F113482A5D00A39430 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		DCC974F213482A5D00A39430 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		DCC974F313482A5D00A39430 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		DCC974F413482A5D00A39430 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		DCC974F513482A5D00A39430 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		DCC974F613482A5D00A39430 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		DCC974F713482A5D00A39430 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		DCC974F813482A5D00A39430 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		DCC974F913482A5D00A39430 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		DCC974FA13482A5D00A39430 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		DCC974FB13482A5D00A39430 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		DCC9751213485C5200A39430 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCC9746F1347DC8100A39430 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC9751313485C5300A39430 /* CoreLocation.framework in Frameworks */,
+				DCC974CE1347EAA500A39430 /* MapKit.framework in Frameworks */,
+				DCC974771347DC8100A39430 /* UIKit.framework in Frameworks */,
+				DCC974791347DC8100A39430 /* Foundation.framework in Frameworks */,
+				DCC9747B1347DC8100A39430 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCC974671347DC8100A39430 = {
+			isa = PBXGroup;
+			children = (
+				DCC9751213485C5200A39430 /* CoreLocation.framework */,
+				DCC9747C1347DC8100A39430 /* JoinMe */,
+				DCC974751347DC8100A39430 /* Frameworks */,
+				DCC974731347DC8100A39430 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCC974731347DC8100A39430 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCC974721347DC8100A39430 /* JoinMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC974751347DC8100A39430 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCC974CD1347EAA500A39430 /* MapKit.framework */,
+				DCC974761347DC8100A39430 /* UIKit.framework */,
+				DCC974781347DC8100A39430 /* Foundation.framework */,
+				DCC9747A1347DC8100A39430 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCC9747C1347DC8100A39430 /* JoinMe */ = {
+			isa = PBXGroup;
+			children = (
+				DCC974851347DC8100A39430 /* JoinMeAppDelegate.h */,
+				DCC974861347DC8100A39430 /* JoinMeAppDelegate.m */,
+				DCC974A21347DD7800A39430 /* ActivitiesViewController.h */,
+				DCC974A31347DD7800A39430 /* ActivitiesViewController.m */,
+				DCC974A61347DD8F00A39430 /* MapViewController.h */,
+				DCC974A71347DD8F00A39430 /* MapViewController.m */,
+				DCC974D51348023800A39430 /* Activity.h */,
+				DCC974D61348023800A39430 /* Activity.m */,
+				DCC974881347DC8100A39430 /* MainWindow.xib */,
+				DCC9747D1347DC8100A39430 /* Supporting Files */,
+			);
+			path = JoinMe;
+			sourceTree = "<group>";
+		};
+		DCC9747D1347DC8100A39430 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCC974EE13482A5D00A39430 /* JSON */,
+				DCC974B11347E27900A39430 /* index.html */,
+				DCC9747E1347DC8100A39430 /* JoinMe-Info.plist */,
+				DCC9747F1347DC8100A39430 /* InfoPlist.strings */,
+				DCC974821347DC8100A39430 /* JoinMe-Prefix.pch */,
+				DCC974831347DC8100A39430 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCC974EE13482A5D00A39430 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				DCC974EF13482A5D00A39430 /* JSON.h */,
+				DCC974F013482A5D00A39430 /* NSObject+SBJSON.h */,
+				DCC974F113482A5D00A39430 /* NSObject+SBJSON.m */,
+				DCC974F213482A5D00A39430 /* NSString+SBJSON.h */,
+				DCC974F313482A5D00A39430 /* NSString+SBJSON.m */,
+				DCC974F413482A5D00A39430 /* SBJSON.h */,
+				DCC974F513482A5D00A39430 /* SBJSON.m */,
+				DCC974F613482A5D00A39430 /* SBJsonBase.h */,
+				DCC974F713482A5D00A39430 /* SBJsonBase.m */,
+				DCC974F813482A5D00A39430 /* SBJsonParser.h */,
+				DCC974F913482A5D00A39430 /* SBJsonParser.m */,
+				DCC974FA13482A5D00A39430 /* SBJsonWriter.h */,
+				DCC974FB13482A5D00A39430 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCC974711347DC8100A39430 /* JoinMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC9748D1347DC8100A39430 /* Build configuration list for PBXNativeTarget "JoinMe" */;
+			buildPhases = (
+				DCC9746E1347DC8100A39430 /* Sources */,
+				DCC9746F1347DC8100A39430 /* Frameworks */,
+				DCC974701347DC8100A39430 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JoinMe;
+			productName = JoinMe;
+			productReference = DCC974721347DC8100A39430 /* JoinMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCC974691347DC8100A39430 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DCC9746C1347DC8100A39430 /* Build configuration list for PBXProject "JoinMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCC974671347DC8100A39430;
+			productRefGroup = DCC974731347DC8100A39430 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCC974711347DC8100A39430 /* JoinMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCC974701347DC8100A39430 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC974811347DC8100A39430 /* InfoPlist.strings in Resources */,
+				DCC9748A1347DC8100A39430 /* MainWindow.xib in Resources */,
+				DCC974B21347E27900A39430 /* index.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCC9746E1347DC8100A39430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC974841347DC8100A39430 /* main.m in Sources */,
+				DCC974871347DC8100A39430 /* JoinMeAppDelegate.m in Sources */,
+				DCC974A41347DD7800A39430 /* ActivitiesViewController.m in Sources */,
+				DCC974A81347DD8F00A39430 /* MapViewController.m in Sources */,
+				DCC974D71348023800A39430 /* Activity.m in Sources */,
+				DCC974FC13482A5D00A39430 /* NSObject+SBJSON.m in Sources */,
+				DCC974FD13482A5D00A39430 /* NSString+SBJSON.m in Sources */,
+				DCC974FE13482A5D00A39430 /* SBJSON.m in Sources */,
+				DCC974FF13482A5D00A39430 /* SBJsonBase.m in Sources */,
+				DCC9750013482A5D00A39430 /* SBJsonParser.m in Sources */,
+				DCC9750113482A5D00A39430 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCC9747F1347DC8100A39430 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC974801347DC8100A39430 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCC974881347DC8100A39430 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC974891347DC8100A39430 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCC9748B1347DC8100A39430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCC9748C1347DC8100A39430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		DCC9748E1347DC8100A39430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoinMe/JoinMe-Prefix.pch";
+				INFOPLIST_FILE = "JoinMe/JoinMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCC9748F1347DC8100A39430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoinMe/JoinMe-Prefix.pch";
+				INFOPLIST_FILE = "JoinMe/JoinMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCC9746C1347DC8100A39430 /* Build configuration list for PBXProject "JoinMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC9748B1347DC8100A39430 /* Debug */,
+				DCC9748C1347DC8100A39430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC9748D1347DC8100A39430 /* Build configuration list for PBXNativeTarget "JoinMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC9748E1347DC8100A39430 /* Debug */,
+				DCC9748F1347DC8100A39430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCC974691347DC8100A39430 /* Project object */;
+}
