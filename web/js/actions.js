@@ -122,6 +122,11 @@ function httpRequestCallback(response) {
 }
 
 
+// Callback function that handles errors from iOS
+function errorHandler(errorMessage) {
+	// TODO handle error
+}
+
 
 // Function that sends a new activity to the server
 function pushActivity() {
