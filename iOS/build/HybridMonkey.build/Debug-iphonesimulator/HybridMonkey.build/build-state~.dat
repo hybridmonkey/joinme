@@ -1,258 +1,0 @@
-THybridMonkey
-v7
-r0
-t323336761.674603
-cCheck dependencies
-cProcessInfoPlistFile /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/Info.plist HybridMonkey-Info.plist
-cCompileXIB /Users/Rod/Codes/iOS/Projects/HybridMonkey/MainWindow.xib
-cProcessPCH /var/folders/C3/C3OdM9-GEy4uwRgnT9vX6E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/HybridMonkey_Prefix-cpfopcujjvaxpcevkxiqjqmzsqdp/HybridMonkey_Prefix.pch.gch HybridMonkey_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cDataModelVersionCompile /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey.momd /Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey.xcdatamodeld
-cCompileC build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/main.o /Users/Rod/Codes/iOS/Projects/HybridMonkey/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/HybridMonkeyAppDelegate.o /Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/WebViewController.o /Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/WebViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
-c000000004CC128950000000000000110
-t1287727253
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreData.framework/CoreData
-c000000004CC122A000000000001D6CE0
-t1287725728
-s1928416
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
-c000000004CC12294000000000000046B
-t1287725716
-s1131
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC12246000000000029B310
-t1287725638
-s2732816
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC1226D000000000029D5D0
-t1287725677
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC1225F0000000000001466
-t1287725663
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC1281F0000000000000AA1
-t1287727135
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC12883000000000074D7B0
-t1287727235
-s7657392
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
-c000000004CB3FA080000000000001ADD
-t1286863368
-s6877
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.h
-c000000004D9561A00000000000000377
-t1301635488
-s887
-i<UIKit/UIKit.h>
-i<CoreData/CoreData.h>
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m
-c000000004D9582B00000000000001E3C
-t1301643952
-s7740
-i"HybridMonkeyAppDelegate.h"
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/WebViewController.h
-c000000004D95821500000000000000EE
-t1301643797
-s238
-i<UIKit/UIKit.h>
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/WebViewController.m
-c000000004D9582150000000000000629
-t1301643797
-s1577
-i"WebViewController.h"
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey.xcdatamodeld
-c000000004D9561A00000000000000088
-t1301635488
-s136
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey_Prefix.pch
-c000000004D9561A0000000000000016C
-t1301635488
-s364
-i<Availability.h>
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-i<CoreData/CoreData.h>
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/MainWindow.xib
-c000000004D9561A000000000000021E3
-t1301635488
-s8675
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app
-t2
-s0
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app.dSYM
-t2
-s0
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey
-t2
-s0
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey.momd
-t1301643961
-s136
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/Info.plist
-t1301643959
-s611
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/MainWindow.nib
-t1301643960
-s989
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/PkgInfo
-t1301643959
-s8
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/HybridMonkey.LinkFileList
-c000000004D9582B700000000000001B8
-t1301643959
-s440
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/HybridMonkeyAppDelegate.o
-t2
-s0
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/WebViewController.o
-t1301643961
-s37624
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/main.o
-t1301643961
-s6312
-
-N/Users/Rod/Codes/iOS/Projects/HybridMonkey/main.m
-c000000004D9561A00000000000000172
-t1301635488
-s370
-i<UIKit/UIKit.h>
-
-N/var/folders/C3/C3OdM9-GEy4uwRgnT9vX6E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/HybridMonkey_Prefix-cpfopcujjvaxpcevkxiqjqmzsqdp/HybridMonkey_Prefix.pch.gch
-t1301643961
-s16326640
-
-NHybridMonkey-Info.plist
-c000000004D9561A0000000000000038D
-t1301635488
-s909
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies323336759#323336759#0(0"0(0#1#0"8627683104#0"0#
-
-CCompileC build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/HybridMonkeyAppDelegate.o /Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s323336761.539367
-e323336761.622771
-r0
-xCompileC
-xbuild/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/HybridMonkeyAppDelegate.o
-x/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m: In function '-[HybridMonkeyAppDelegate application:didFinishLaunchingWithOptions:]':
-o/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m:23: error: 'WebViewController' undeclared (first use in this function)
-o/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m:23: error: (Each undeclared identifier is reported only once
-o/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m:23: error: for each function it appears in.)
-o/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m:23: error: 'wvc' undeclared (first use in this function)
-lSLF07#2@84"Compile /Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m323336761#323336761#0(705"/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m: In function '-[HybridMonkeyAppDelegate application:didFinishLaunchingWithOptions:]':/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m:23: error: 'WebViewController' undeclared (first use in this function)/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m:23: error: (Each undeclared identifier is reported only once/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m:23: error: for each function it appears in.)/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m:23: error: 'wvc' undeclared (first use in this function)2(4@59"'WebViewController' undeclared (first use in this function)323336761#163#148#0(6@76"/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m323336752#23#0#23#0#43"'*' undeclared (first use in this function)0(4@45"'wvc' undeclared (first use in this function)323336761#571#134#0(6@76"/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m323336752#23#0#23#0#43"'*' undeclared (first use in this function)0(0#0#76"/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m8627342656#2166"    cd /Users/Rod/Codes/iOS/Projects/HybridMonkey    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-generated-files.hmap -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-own-target-headers.hmap -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-all-target-headers.hmap -iquote /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-project-headers.hmap -F/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/include -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/DerivedSources/i386 -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/DerivedSources -include /var/folders/C3/C3OdM9-GEy4uwRgnT9vX6E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/HybridMonkey_Prefix-cpfopcujjvaxpcevkxiqjqmzsqdp/HybridMonkey_Prefix.pch -c /Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/HybridMonkeyAppDelegate.m -o /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/HybridMonkeyAppDelegate.o1#
-
-CCompileC build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/WebViewController.o /Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/WebViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s323336761.603411
-e323336761.674508
-r1
-xCompileC
-xbuild/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/WebViewController.o
-x/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/WebViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/WebViewController.m323336761#323336761#0(0"0(0#0#70"/Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/WebViewController.m8619494208#2154"    cd /Users/Rod/Codes/iOS/Projects/HybridMonkey    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-generated-files.hmap -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-own-target-headers.hmap -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-all-target-headers.hmap -iquote /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-project-headers.hmap -F/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/include -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/DerivedSources/i386 -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/DerivedSources -include /var/folders/C3/C3OdM9-GEy4uwRgnT9vX6E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/HybridMonkey_Prefix-cpfopcujjvaxpcevkxiqjqmzsqdp/HybridMonkey_Prefix.pch -c /Users/Rod/Codes/iOS/Projects/HybridMonkey/Classes/WebViewController.m -o /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/WebViewController.o0#
-
-CCompileC build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/main.o /Users/Rod/Codes/iOS/Projects/HybridMonkey/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s323336761.440963
-e323336761.539255
-r1
-xCompileC
-xbuild/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/main.o
-x/Users/Rod/Codes/iOS/Projects/HybridMonkey/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/Rod/Codes/iOS/Projects/HybridMonkey/main.m323336761#323336761#0(0"0(0#0#49"/Users/Rod/Codes/iOS/Projects/HybridMonkey/main.m8627468320#2120"    cd /Users/Rod/Codes/iOS/Projects/HybridMonkey    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-generated-files.hmap -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-own-target-headers.hmap -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-all-target-headers.hmap -iquote /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-project-headers.hmap -F/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/include -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/DerivedSources/i386 -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/DerivedSources -include /var/folders/C3/C3OdM9-GEy4uwRgnT9vX6E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/HybridMonkey_Prefix-cpfopcujjvaxpcevkxiqjqmzsqdp/HybridMonkey_Prefix.pch -c /Users/Rod/Codes/iOS/Projects/HybridMonkey/main.m -o /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/Rod/Codes/iOS/Projects/HybridMonkey/MainWindow.xib
-s323336759.752644
-e323336760.247553
-r1
-xCompileXIB
-x/Users/Rod/Codes/iOS/Projects/HybridMonkey/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib323336759#323336760#0(0"0(0#0#57"/Users/Rod/Codes/iOS/Projects/HybridMonkey/MainWindow.xib8627322496#649"    cd /Users/Rod/Codes/iOS/Projects/HybridMonkey    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/MainWindow.nib /Users/Rod/Codes/iOS/Projects/HybridMonkey/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CDataModelVersionCompile /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey.momd /Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey.xcdatamodeld
-s323336761.439372
-e323336761.603286
-r1
-xDataModelVersionCompile
-x/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey.momd
-x/Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey.xcdatamodeld
-lSLF07#2@112"DataModelVersionCompile build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey.momd HybridMonkey.xcdatamodeld323336761#323336761#0(0"0(0#0#68"/Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey.xcdatamodeld8627538176#475"    cd /Users/Rod/Codes/iOS/Projects/HybridMonkey    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey.xcdatamodeld /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey.momd0#
-
-CGenerateDSYMFile /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app.dSYM /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey
-r0
-
-CLd /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/HybridMonkey normal i386
-r0
-
-CProcessInfoPlistFile /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/Info.plist HybridMonkey-Info.plist
-s323336759.677700
-e323336759.752545
-r1
-xProcessInfoPlistFile
-x/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/Info.plist
-xHybridMonkey-Info.plist
-lSLF07#2@31"Process HybridMonkey-Info.plist323336759#323336759#0(0"0(0#0#66"/Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey-Info.plist8628835168#568"    cd /Users/Rod/Codes/iOS/Projects/HybridMonkey    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility HybridMonkey-Info.plist -genpkginfo /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app/Info.plist0#
-
-CProcessPCH /var/folders/C3/C3OdM9-GEy4uwRgnT9vX6E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/HybridMonkey_Prefix-cpfopcujjvaxpcevkxiqjqmzsqdp/HybridMonkey_Prefix.pch.gch HybridMonkey_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s323336760.247685
-e323336761.438973
-r1
-xProcessPCH
-x/var/folders/C3/C3OdM9-GEy4uwRgnT9vX6E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/HybridMonkey_Prefix-cpfopcujjvaxpcevkxiqjqmzsqdp/HybridMonkey_Prefix.pch.gch
-xHybridMonkey_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@34"Precompile HybridMonkey_Prefix.pch323336760#323336761#0(0"0(0#0#66"/Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey_Prefix.pch8613928800#2003"    cd /Users/Rod/Codes/iOS/Projects/HybridMonkey    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-generated-files.hmap -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-own-target-headers.hmap -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-all-target-headers.hmap -iquote /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/HybridMonkey-project-headers.hmap -F/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/include -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/DerivedSources/i386 -I/Users/Rod/Codes/iOS/Projects/HybridMonkey/build/HybridMonkey.build/Debug-iphonesimulator/HybridMonkey.build/DerivedSources -c /Users/Rod/Codes/iOS/Projects/HybridMonkey/HybridMonkey_Prefix.pch -o /var/folders/C3/C3OdM9-GEy4uwRgnT9vX6E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/HybridMonkey_Prefix-cpfopcujjvaxpcevkxiqjqmzsqdp/HybridMonkey_Prefix.pch.gch0#
-
-CTouch /Users/Rod/Codes/iOS/Projects/HybridMonkey/build/Debug-iphonesimulator/HybridMonkey.app
-r0
-
