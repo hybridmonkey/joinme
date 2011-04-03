@@ -1,11 +1,10 @@
 // Global variables
-var jsonURI = "http://joinme.heroku.com/api/activities.json";
-var userToken = "";
+var username = "rod_wilhelmy";
+var jsonURI = "http://joinme.heroku.com/" + username + "/activities.json";
 //var serverURI = userToken + "@" + jsonURI;
 var serverURI = jsonURI;
 
 var currentActivityFeed = [];
-var lastKnownLocation = {}; // User's last known location
 var screen;
 var screenState = {
 	LIST : 0,
@@ -14,8 +13,10 @@ var screenState = {
 
 $(document).ready(function() {
 
-	// TEMPORARY - delete when tabs are working in iOS
+	// Initial screen state
 	screen = screenState.LIST;
+	
+	// TEMPORARY - delete when tabs are working in iOS
 	lastKnownLocation = {"lat":100,"lon":200};
 	
 	// Setting button actions
@@ -31,8 +32,31 @@ $(document).ready(function() {
 
 
 
+// Callback function to for iOS to set username 
+function logInAs(user) {
+	username = user;
+}
+
+
+// Function that asks iOS for the device's current location
+function askForCurrentLocation(){
+	// TODO
+}
+
+
+// Callback function to for iOS to answer with current location
+function receiveLocation(latitude, longitude) {
+	$('#newActivityForm #activityLocation').val(latitude + "," + longitude);
+}
+
+
+
 // Function that toggles between showing and hiding the newActivityBox div
 function toggleNewActivityBox() {
+	if('#newActivityBox') {
+		askForCurrentLocation();	
+	}
+
 	$('#newActivityBox').slideToggle('fast');
 }
 
@@ -58,7 +82,7 @@ function loadActivityFeed() {
 			$("ul#activityFeed").append("No one is doing anything... :(");
 		}
 	} else { // Load MAP annotations with current activity feed
-		// TODO
+		// TODO tell iOS map places
 	}
 
 	
@@ -86,10 +110,15 @@ function fetchActivityFeed() {
 	
 	//TODO make iOS make the request
 	$.getJSON(serverURI, function(data) {
-  		currentActivityFeed = data;
-  		loadActivityFeed();
+  		httpRequestCallback();
 	});
 	
+}
+
+// Function callback that receives httpRequest response
+function httpRequestCallback(response) {
+	currentActivityFeed = response;
+  	loadActivityFeed();
 }
 
 
